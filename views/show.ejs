@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title><%=coffee.name; %></title>
+</head>
+<body>
+    <div class = "container">
+        <h1><%=coffee.name ; %></h1>
+
+        <img src ="<%=coffee.img; %>">
+        <h2>Alternate Names</h2>
+            <%=coffee.alternate_names; %>
+        <h2>Country of Origin</h2>
+            <%=coffee.country_of_origin%>
+        <br/>
+        <br/>
+        <br/>
+        <a href="/drinks" class = "button">Back</a>
+    </div>
+</body>
+</html>

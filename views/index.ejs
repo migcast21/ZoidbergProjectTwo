@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/style.css">
+        <title>Coffee Drinks | Main</title>
+    </head>
+    <body>
+        <div class = "container">
+            <h1>Main Page</h1>
+            <table>
+            <% for (let i = 0; i < coffee.length; i++) { %>
+            <tr>
+                <td>
+                    <a href ="/drinks/<%=coffee[i].id %>">
+                    <%=coffee[i].name; %></a>
+                </td>
+            </tr>
+            <% } %>
+        </table>
+        <nav>
+            <a href="/drinks/new">Create a New Coffee Drink</a>
+        </nav>
+        </div>
+    </body>
+</html>
+
+
+

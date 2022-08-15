@@ -7,6 +7,7 @@ const mongoose = require ('mongoose');
 const app = express();
 const db = mongoose.connection;
 require('dotenv').config()
+const Coffee = require('./models/schema.js');
 //___________________
 //Port
 //___________________
@@ -48,8 +49,36 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
+
+//create route
+app.get('/drinks/new', (req, res)=>{
+  res.render('new.ejs');
+});
+
+app.post('/drinks/', (req, res)=>{
+  // res.send(req.body);
+  Coffee.create(req.body, (error, createdCoffee) => {
+    res.redirect('/drinks');
+  });
+});
+
+//show route
+app.get('/drinks/:id', (req, res)=>{
+  Coffee.findById(req.params.id, (err, foundCoffee)=>{
+      res.render('show.ejs', {
+        coffee: foundCoffee
+      });
+  });
+});
+
+
+//index route
+app.get('/drinks' , (req, res) => {
+  Coffee.find({}, (error, allCoffee) => {
+    res.render('index.ejs', {
+      coffee: allCoffee
+    });
+  });
 });
 
 //___________________
