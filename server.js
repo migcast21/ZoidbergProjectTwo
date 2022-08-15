@@ -74,7 +74,7 @@ app.get('/drinks/:id', (req, res)=>{
 
 
 //index route
-app.get('/drinks' , (req, res) => {
+app.get('/drinks', (req, res) => {
   Coffee.find({}, (error, allCoffee) => {
     res.render('index.ejs', {
       coffee: allCoffee
