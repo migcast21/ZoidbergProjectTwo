@@ -12,7 +12,7 @@ const Coffee = require('./models/schema.js');
 //Port
 //___________________
 // Allow use of Heroku's port or your own local port, depending on the environment
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3003;
 
 //___________________
 //Database
@@ -79,6 +79,31 @@ app.get('/drinks' , (req, res) => {
     res.render('index.ejs', {
       coffee: allCoffee
     });
+  });
+});
+
+//delete route
+app.delete('/drinks/:id', (req, res)=>{
+  Coffee.findByIdAndDelete(req.params.id, (err, removedCoffee) => {
+    res.redirect('/drinks');
+  });
+});
+
+//edit route
+app.get('/drinks/:id/edit', (req, res)=>{
+  Coffee.findById(req.params.id, (err, foundCoffee)=>{ 
+      res.render(
+      'edit.ejs',
+      {
+        coffee: foundCoffee 
+      }
+    );
+  });
+});
+
+app.put('/drinks/:id', (req, res)=>{
+  Coffee.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel) => {
+    res.redirect('/drinks');
   });
 });
 

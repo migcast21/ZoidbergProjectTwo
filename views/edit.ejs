@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+        <title>Coffee Drink | Edit Properties</title>
+    </head>
+    <body>
+        <h1>Edit Drinks</h1>
+        <form action="/drinks/<%=coffee.id%>?_method=PUT" method="POST">
+            Name: <input type="text" name="name" value="<%=coffee.name%>"/><br/>
+            Type: <input type="text" name="alternate_names" value="<%=coffee.alternate_names%>"/><br/>
+            Country of Origin: <input type="text" name="country_of_origin" value="<%=coffee.country_of_origin%>"/><br/>
+            <input type="submit" name="" value="Submit Changes"/>
+        </form>
+        <br/>
+        <a href="/drinks">Back to Main Page</a>
+    </body>
+</html>
