@@ -2,10 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style.css">
         <title>Coffee Drinks | Create</title>
     </head>
     <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="/drinks">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="/drinks/new">Create</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <h1>Create a Drink</h1>
         <h3>Fill in the fields:</h3>
         <form action="/drinks" method="POST">
@@ -20,6 +44,7 @@
             <input type="text" name="taste" placeholder="taste" /><br/>
             <input type="text" name="notes" placeholder="notes" /><br/>
             <input type="text" name="img" placeholder="image" /><br/>
+            <br/>
             <input type="submit" value="Create Drink"/>
         </form>
     </body>

@@ -2,13 +2,37 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style.css">
         <title>Coffee Drinks | Main</title>
     </head>
     <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">CC1.0</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="/drinks">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="/drinks/new">Create</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div class = "container">
-            <h1>Main Page</h1>
-            <table>
+            <h1>Coffee Compendium 1.0</h1>
+            <table class ="table">
             <% for (let i = 0; i < coffee.length; i++) { %>
             <tr>
                 <td>
@@ -16,12 +40,13 @@
 
                 </td>
                 <td>
-                    <a href ="/drinks/<%=coffee[i].id %>"></a>
-                </td>
-                <td>
                     <a href="/drinks/<%=coffee[i].id; %>">
                         <%=coffee[i].name; %></a>
-                    <!--  ADD DELETE FORM HERE-->
+                </td>
+                <td>
+                    <img src ="<%=coffee[i].img; %>" class = "img-thumbnail">
+                </td>
+                <td>
                     <form action="/drinks/<%=coffee[i].id; %>?_method=DELETE" method="POST">
                         <input type="submit" value="DELETE"/>
                     </form>
