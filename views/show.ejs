@@ -14,24 +14,24 @@
     <div class = "container">
         <h1><%=coffee.name ; %></h1>
         <img src ="<%=coffee.img; %>" class = "img-thumbnail">
-        <h2>Alternate Names</h2>
-            <%=coffee.alternate_names; %>
-        <h2>Country of Origin</h2>
-            <%=coffee.country_of_origin%>
-        <h2>Type</h2>
-            <%=coffee.type%>
-        <h2>Coffee Base</h2>
-            <%=coffee.coffee_base%>
-        <h2>Main Ingredients</h2>
-            <%=coffee.main_ingredients%>
-        <h2>Similar Drinks</h2>
-            <%=coffee.similar_drinks%>
-        <h2>Preparation</h2>
-            <%=coffee.preparation%>
-        <h2>Taste</h2>
-            <%=coffee.taste%>
-        <h2>Notes</h2>
-            <%=coffee.notes%>
+        <h3>Alternate Names</h3>
+            <p><%=coffee.alternate_names; %></p>
+        <h3>Country of Origin</h3>
+            <p><%=coffee.country_of_origin%></p>
+        <h3>Type</h3>
+            <p> <%=coffee.type%></p>
+        <h3>Coffee Base</h3>
+            <p><%=coffee.coffee_base%></p>
+        <h3>Main Ingredients</h3>
+            <p><%=coffee.main_ingredients%></p>
+        <h3>Similar Drinks</h3>
+            <p><%=coffee.similar_drinks%></p>
+        <h3>Preparation</h3>
+            <p><%=coffee.preparation%></p>
+        <h3>Taste</h3>
+            <p><%=coffee.taste%></p>
+        <h3>Notes</h3>
+            <p><%=coffee.notes%></p>
     </div>
     <a href="/drinks" class = "button">Back</a>
     <br/>
@@ -46,7 +46,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="/drinks">Home</a></li>
           <li><a href="/drinks/new">Create a New Coffee Drink</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="/drinks/about">About</a></li>
         </ul>
       </div>
     </nav>

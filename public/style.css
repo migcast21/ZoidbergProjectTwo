@@ -23,7 +23,7 @@ body {
 }
 
 a:link {
-    color: darkslategray;
+    color: saddlebrown;
 }
 
 a:hover {
@@ -43,5 +43,6 @@ a:visited {
     background-color: black;
 }
 
-
-
+p {
+    color: saddlebrown;
+}

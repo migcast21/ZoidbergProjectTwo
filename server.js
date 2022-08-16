@@ -59,6 +59,44 @@ app.get('/drinks/seed', (req, res) => {
   });
 });
 
+//create route
+app.get('/drinks/new', (req, res)=>{
+  res.render('new.ejs');
+});
+
+app.post('/drinks/', (req, res)=>{
+  // res.send(req.body);
+  Coffee.create(req.body, (error, createdCoffee) => {
+    res.redirect('/drinks');
+  });
+});
+
+app.get('/drinks/about', (req, res) => {
+  Coffee.find({}, (error, allCoffee) => {
+    res.render('about.ejs', {
+      coffee: allCoffee
+    });
+  });
+});
+
+//show route
+app.get('/drinks/:id', (req, res)=>{
+  Coffee.findById(req.params.id, (error, foundCoffee)=>{
+      res.render('show.ejs', {
+        coffee: foundCoffee
+      });
+  });
+});
+
+//index route
+app.get('/drinks', (req, res) => {
+  Coffee.find({}, (error, allCoffee) => {
+    res.render('index.ejs', {
+      coffee: allCoffee
+    });
+  });
+});
+
 //delete route
 app.delete('/drinks/:id', (req, res)=>{
   Coffee.findByIdAndDelete(req.params.id, (error, removedCoffee) => {
@@ -82,36 +120,6 @@ app.put('/drinks/:id', (req, res)=>{
   Coffee.findByIdAndUpdate(req.params.id,req.body,{new:true}, (error, updatedCoffee) => {
     res.redirect('/drinks');
     // res.send(req.body);
-  });
-});
-
-//index route
-app.get('/drinks', (req, res) => {
-  Coffee.find({}, (error, allCoffee) => {
-    res.render('index.ejs', {
-      coffee: allCoffee
-    });
-  });
-});
-
-//create route
-app.get('/drinks/new', (req, res)=>{
-  res.render('new.ejs');
-});
-
-app.post('/drinks/', (req, res)=>{
-  // res.send(req.body);
-  Coffee.create(req.body, (error, createdCoffee) => {
-    res.redirect('/drinks');
-  });
-});
-
-//show route
-app.get('/drinks/:id', (req, res)=>{
-  Coffee.findById(req.params.id, (error, foundCoffee)=>{
-      res.render('show.ejs', {
-        coffee: foundCoffee
-      });
   });
 });
 
