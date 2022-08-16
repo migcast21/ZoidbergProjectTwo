@@ -2,12 +2,13 @@
 //Dependencies
 //___________________
 const express = require('express');
-const methodOverride  = require('method-override');
+const methodOverride = require('method-override');
 const mongoose = require ('mongoose');
 const app = express();
 const db = mongoose.connection;
 require('dotenv').config()
 const Coffee = require('./models/schema.js');
+const drinks = require('./models/coffee.js');
 //___________________
 //Port
 //___________________
@@ -51,6 +52,48 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 //localhost:3000
 
+//seed route
+app.get('/drinks/seed', (req, res) => {
+  Coffee.create(drinks,(err,data) => {
+    res.redirect('/drinks');
+  });
+});
+
+//delete route
+app.delete('/drinks/:id', (req, res)=>{
+  Coffee.findByIdAndDelete(req.params.id, (error, removedCoffee) => {
+    res.redirect('/drinks');
+  });
+});
+
+//edit route
+app.get('/drinks/:id/edit', (req, res)=>{
+  Coffee.findById(req.params.id, (error, foundCoffee)=>{ 
+      res.render(
+      'edit.ejs',
+      {
+        coffee: foundCoffee 
+      }
+    );
+  });
+});
+
+app.put('/drinks/:id', (req, res)=>{
+  Coffee.findByIdAndUpdate(req.params.id,req.body,{new:true}, (error, updatedCoffee) => {
+    res.redirect('/drinks');
+    // res.send(req.body);
+  });
+});
+
+//index route
+app.get('/drinks', (req, res) => {
+  Coffee.find({}, (error, allCoffee) => {
+    res.render('index.ejs', {
+      coffee: allCoffee
+    });
+  });
+});
+
 //create route
 app.get('/drinks/new', (req, res)=>{
   res.render('new.ejs');
@@ -65,45 +108,10 @@ app.post('/drinks/', (req, res)=>{
 
 //show route
 app.get('/drinks/:id', (req, res)=>{
-  Coffee.findById(req.params.id, (err, foundCoffee)=>{
+  Coffee.findById(req.params.id, (error, foundCoffee)=>{
       res.render('show.ejs', {
         coffee: foundCoffee
       });
-  });
-});
-
-
-//index route
-app.get('/drinks', (req, res) => {
-  Coffee.find({}, (error, allCoffee) => {
-    res.render('index.ejs', {
-      coffee: allCoffee
-    });
-  });
-});
-
-//delete route
-app.delete('/drinks/:id', (req, res)=>{
-  Coffee.findByIdAndDelete(req.params.id, (err, removedCoffee) => {
-    res.redirect('/drinks');
-  });
-});
-
-//edit route
-app.get('/drinks/:id/edit', (req, res)=>{
-  Coffee.findById(req.params.id, (err, foundCoffee)=>{ 
-      res.render(
-      'edit.ejs',
-      {
-        coffee: foundCoffee 
-      }
-    );
-  });
-});
-
-app.put('/drinks/:id', (req, res)=>{
-  Coffee.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedModel) => {
-    res.redirect('/drinks');
   });
 });
 

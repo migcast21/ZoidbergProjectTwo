@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const coffeeSchema = new Schema({
     name: String,
-    alternate_names: {type: String, required: false},
+    alternate_names: String,
     country_of_origin: String,
     type: String,
     coffee_base: String,
@@ -12,10 +12,10 @@ const coffeeSchema = new Schema({
     preparation: String,
     taste: String,
     notes: String,
-    img: {type: String, required: false}
+    img: String
 }, {timestamps: true})
 
 
-const coffeeCollection = mongoose.model('Coffee', coffeeSchema);
+const Coffee = mongoose.model('Coffee', coffeeSchema);
 
-module.exports = coffeeCollection;
+module.exports = Coffee;

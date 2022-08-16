@@ -11,33 +11,36 @@
         <title>Coffee Drink | Edit Properties</title>
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#">Logo</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="/drinks">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="/drinks/new">Create</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
         <h1>Edit Drinks</h1>
         <form action="/drinks/<%=coffee.id%>?_method=PUT" method="POST">
             Name: <input type="text" name="name" value="<%=coffee.name%>"/><br/>
-            Type: <input type="text" name="alternate_names" value="<%=coffee.alternate_names%>"/><br/>
+            Alternate Names: <input type="text" name="alternate_names" value="<%=coffee.alternate_names%>"/><br/>
             Country of Origin: <input type="text" name="country_of_origin" value="<%=coffee.country_of_origin%>"/><br/>
-            <input type="submit" name="" value="Submit Changes"/>
+            Type: <input type="text" name="types" value="<%=coffee.types%>"/><br/>
+            Coffee Base: <input type="text" name="coffee_base" value="<%=coffee.coffee_base%>"/><br/>
+            Main Ingredients: <input type="text" name="main_ingredients" value="<%=coffee.main_ingredients%>"/><br/>
+            Similar Drinks: <input type="text" name="similar_drinks" value="<%=coffee.similar_drinks%>"/><br/>
+            Preparation: <input type="text" name="preparation" value="<%=coffee.preparation%>"/><br/>
+            Taste: <input type="text" name="taste" value="<%=coffee.taste%>"/><br/>
+            Notes: <input type="text" name="notes" value="<%=coffee.notes%>"/><br/>
+            Image: <input type="text" name="img" value="<%=coffee.img%>"/><br/>
+            <input type="submit" value="Submit Changes"/>
         </form>
         <br/>
-        <a href="/drinks">Back to Main Page</a>
+        <br/>
+        <br/>
+        <br/>
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/drinks">Coffee Compendium 1.0</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/drinks">Home</a></li>
+              <li><a href="/drinks/new">Create a New Coffee Drink</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </nav>
     </body>
 </html>

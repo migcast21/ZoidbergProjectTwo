@@ -11,25 +11,6 @@
         <title>Coffee Drinks | Create</title>
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#">Logo</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="/drinks">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="/drinks/new">Create</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
         <h1>Create a Drink</h1>
         <h3>Fill in the fields:</h3>
         <form action="/drinks" method="POST">
@@ -43,9 +24,25 @@
             <input type="text" name="preparation" placeholder="preparation" /><br/>
             <input type="text" name="taste" placeholder="taste" /><br/>
             <input type="text" name="notes" placeholder="notes" /><br/>
-            <input type="text" name="img" placeholder="image" /><br/>
+            <input type="text" name="img" placeholder="image (url)" /><br/>
             <br/>
             <input type="submit" value="Create Drink"/>
         </form>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/drinks">Coffee Compendium 1.0</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/drinks">Home</a></li>
+              <li><a href="/drinks/new">Create a New Coffee Drink</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </nav>
     </body>
 </html>
