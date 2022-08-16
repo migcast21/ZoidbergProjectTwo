@@ -94,7 +94,7 @@ app.get('/drinks', (req, res) => {
     res.render('index.ejs', {
       coffee: allCoffee
     });
-  });
+  }).sort({_id: '1' })
 });
 
 //delete route
@@ -119,7 +119,6 @@ app.get('/drinks/:id/edit', (req, res)=>{
 app.put('/drinks/:id', (req, res)=>{
   Coffee.findByIdAndUpdate(req.params.id,req.body,{new:true}, (error, updatedCoffee) => {
     res.redirect('/drinks');
-    // res.send(req.body);
   });
 });
 
