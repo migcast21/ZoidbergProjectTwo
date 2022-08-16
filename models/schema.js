@@ -16,6 +16,6 @@ const coffeeSchema = new Schema({
 }, {timestamps: true})
 
 
-const Coffee = mongoose.model('Coffee', coffeeSchema);
+const coffeeCollection = mongoose.model('Coffee', coffeeSchema);
 
-module.exports = Coffee;
+module.exports = coffeeCollection;

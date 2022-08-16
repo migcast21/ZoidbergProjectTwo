@@ -27,7 +27,7 @@
                         <%=coffee[i].name; %></a>
                 </td>
                 <td>
-                    <img src ="<%=coffee[i].img; %>" class = "img-fluid img-thumbnail">
+                    <a href="/drinks/<%=coffee[i].id; %>"><img src ="<%=coffee[i].img; %>" class = "img-fluid img-thumbnail"></a>
                 </td>
                 <td>
                     <form action="/drinks/<%=coffee[i].id; %>?_method=DELETE" method="POST">
