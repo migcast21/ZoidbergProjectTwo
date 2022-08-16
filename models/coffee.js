@@ -35,7 +35,7 @@ module.exports = [
       similar_drinks: "red eye, dead eye",
       preparation: "pour two shots of espresso over a cup of coffee",
       taste: "strong",
-      notes: "SAMPLE TEXT",
+      notes: "",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnWdEbz8T7niAT2E1JNZKLuLl3VbdMUX7t3g&usqp=CAU"
     },
     {
@@ -49,7 +49,7 @@ module.exports = [
       preparation: "combine chilled tea with two shots of espresso and other ingredients. Also include: orange blossom water, star anise, tamarind",
       taste: "bitter, spicy, sweet",
       notes: "asdf",
-      img: "https://blog.lovers.coffee/wp-content/uploads/2021/04/ben-kolde-sKBWdCyBLg-unsplash.jpg"
+      img: "https://i.pinimg.com/originals/8c/45/ce/8c45cece54c7cb7424a15e6aa8f243c0.png"
     },
     {
       name: "Ca Phe",
@@ -180,5 +180,70 @@ module.exports = [
       taste: "Milky",
       notes: "Lattes are usually served in a large mug and are widely known for their art",
       img: "https://media.istockphoto.com/photos/caffe-latte-macchiato-coffee-layered-with-milk-picture-id1092652322?k=20&m=1092652322&s=170667a&w=0&h=zAdM5OPZSXE9beHEkmbA9v0wEZsM0cczYLaZ2npLhDc=" 
+    },
+    {
+      name: "Caffé Macchiato",
+      alternate_names: "Espresso Macchiato, Macchiato",
+      country_of_origin: "Italy",
+      type: "Hot",
+      coffee_base: "Espresso",
+      main_ingredients: "Coffee, milk",
+      similar_drinks: "Espresso",
+      preparation: "AAdd a small amount of steamed or frothed milk to two shots of espresso",
+      taste: "Bitter, strong",
+      notes: "A Caffe Macchiato is presented similar to an espresso and can have art like a caffe latte",
+      img: "https://media.istockphoto.com/photos/cafe-latte-macchiato-layered-coffee-picture-id1256257189?k=20&m=1256257189&s=612x612&w=0&h=8HHukdwHZyM6ngar_NT0fY2E3UcmfTb8U4At52cS17k=" 
+    },
+    {
+      name: "Caffé Marocchino",
+      alternate_names: "Marocchino",
+      country_of_origin: "Italy",
+      type: "Hot",
+      coffee_base: "Espresso",
+      main_ingredients: "Coffee, cocoa, milk",
+      similar_drinks: "Bicerin",
+      preparation: "Add a small amount of hot milk to a shot of espresso. Top with cocoa powder",
+      taste: "Milky, strong, chocolatey",
+      notes: "A Caffe Marocchino is served layered in a small glass. It can also be prepared with a dusting of cocoa powder at the bottom of the cup",
+      img: "https://perfectdailygrind.com/wp-content/uploads/2020/11/Cafe%CC%81-Marrochino-4.jpg" 
+    },
+    {
+      name: "Cappuccino",
+      alternate_names: "",
+      country_of_origin: "Italy",
+      type: "Hot",
+      coffee_base: "Espresso",
+      main_ingredients: "Coffee, milk",
+      similar_drinks: "Caffe Latte",
+      preparation: "Use equal parts espresso, steamed milk, and foam in that order",
+      taste: "Milky, strong",
+      notes: "Usually served in a mug",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKxbY-L3qqgWkJbkFF019F69a23FDldwZeGQ&usqp=CAU" 
+    },
+    {
+      name: "Cold-Brewed Iced Coffee",
+      alternate_names: "",
+      country_of_origin: "",
+      type: "Cold",
+      coffee_base: "Cold-brew",
+      main_ingredients: "Coffee",
+      similar_drinks: "Iced Coffee",
+      preparation: "Add one part concentrated coffee to three parts water to a glass filled with ice",
+      taste: "Smooth, flavorful, sweet",
+      notes: "Cold-brewed coffee is less acidic, has less caffeine and bitterness, and has a smoother flavor that drip-brewed coffee",
+      img: "https://assets.bonappetit.com/photos/57ad43f91b3340441497558f/5:7/w_1375,h_1925,c_limit/dublin-iced-coffee.jpg" 
+    },
+    {
+      name: "Café Cubano",
+      alternate_names: "Cuban Coffee, Cuban Espresso",
+      country_of_origin: "Cuba",
+      type: "Hot",
+      coffee_base: "Espresso",
+      main_ingredients: "Coffee, sugar",
+      similar_drinks: "Cortadito, Café con Leche, Ca Phe",
+      preparation: "Add sugar to the container where espresso is dripped",
+      taste: "Sweet, strong",
+      notes: "In a Café Cubano, mixing the espresso with sugar while it brews gives a sweeter and smoother flavor than mixing sugar after brewing",
+      img: "https://www.thespruceeats.com/thmb/xhjEXST5ToDhB3gFzCx6ZT5N3WI=/4000x2667/filters:no_upscale()/CubanCoffee-001-4928e640d5b7491aa223fb594285a3bf.jpg" 
     }
   ]
