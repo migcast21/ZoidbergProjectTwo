@@ -25,14 +25,13 @@ body {
 @media screen and (min-width: 320px) and (max-width: 999px) {
     table {font-size: 40px; min-width: 60%}
     p:not(.aboutText) {font-size: 40px; min-width: 60%}
-    .aboutText {font-size: 20px; min-width: 50%}
+    .aboutText {font-size: 20px; min-width: 50%;}
     h3 {font-size: 30px;}
     .navbar {font-size: 30px; position: fixed;}
     img {min-width: 220px;}
     .btn-secondary {font-size: 20px; min-width: 50%}
     .button {font-size: 30px; min-width: 50%}
 }
-
 
 .navbar {
     margin-bottom: 0;
