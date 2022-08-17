@@ -24,10 +24,13 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 999px) {
     table {font-size: 40px; min-width: 60%}
-    p {font-size: 40px; min-width: 60%}
+    p:not(.aboutText) {font-size: 40px; min-width: 60%}
     h3 {font-size: 30px;}
     .navbar {font-size: 30px; position: fixed;}
+    img {min-width: 220px;}
 }
+
+
 
 .navbar {
     margin-bottom: 0;
