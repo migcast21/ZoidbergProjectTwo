@@ -18,6 +18,7 @@ body {
       padding: 15px;
     }
     .row.content {height:auto;} 
+    img {min-width: 45%}
 }
 
 .navbar {
@@ -54,3 +55,7 @@ p {
 .mini nav {
     padding: 20px;
 }
+
+.pull-right {
+    float: right;
+} 
