@@ -49,7 +49,7 @@ module.exports = [
       preparation: "combine chilled tea with two shots of espresso and other ingredients. Also include: orange blossom water, star anise, tamarind",
       taste: "bitter, spicy, sweet",
       notes: "asdf",
-      img: "https://www.thecookierookie.com/wp-content/uploads/2016/01/thai-iced-coffee-3-of-10.jpg"
+      img: "https://lovekitchentoday.com/wp-content/uploads/2017/11/Black-Tie-Coffee-recipe.jpg"
     },
     {
       name: "Ca Phe",
