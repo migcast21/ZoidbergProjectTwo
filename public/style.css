@@ -21,6 +21,10 @@ body {
     img {min-width: 45%}
 }
 
+@media screen and (min-width: 576px) {
+    body {font-size: large}
+}
+
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
