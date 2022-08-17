@@ -50,3 +50,7 @@ a:visited {
 p {
     color: saddlebrown;
 }
+
+.mini nav {
+    padding: 20px;
+}

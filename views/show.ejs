@@ -13,6 +13,9 @@
 <body>
     <div class = "container">
         <h1><%=coffee.name ; %></h1>
+        <h5>
+            <a href="/drinks/<%=coffee.id; %>/edit" class = "btn-secondary">Edit</a>
+        </h5>
         <img src ="<%=coffee.img; %>" class = "img-thumbnail">
         <h3>Alternate Names</h3>
             <p><%=coffee.alternate_names; %></p>
@@ -33,7 +36,7 @@
         <h3>Notes</h3>
             <p><%=coffee.notes%></p>
     </div>
-    <a href="/drinks" class = "button">Back</a>
+        <a href="/drinks" class = "button">Back</a>
     <br/>
     <br/>
     <br/>
