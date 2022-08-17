@@ -94,7 +94,7 @@ app.get('/drinks', (req, res) => {
     res.render('index.ejs', {
       coffee: allCoffee
     });
-  }).sort({_id: '1' })
+  }).sort({name: '1' })
 });
 
 //delete route
