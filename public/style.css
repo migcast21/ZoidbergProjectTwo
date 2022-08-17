@@ -1,6 +1,10 @@
 img {
     width: 25%;
 }
+/*only home icons enlarge upon hover*/
+.homepics:hover {
+    width:26%;
+}
 
 body {
     text-align: center;

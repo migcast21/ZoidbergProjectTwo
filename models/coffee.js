@@ -49,7 +49,7 @@ module.exports = [
       preparation: "combine chilled tea with two shots of espresso and other ingredients. Also include: orange blossom water, star anise, tamarind",
       taste: "bitter, spicy, sweet",
       notes: "asdf",
-      img: "https://i.pinimg.com/originals/8c/45/ce/8c45cece54c7cb7424a15e6aa8f243c0.png"
+      img: "https://www.thecookierookie.com/wp-content/uploads/2016/01/thai-iced-coffee-3-of-10.jpg"
     },
     {
       name: "Ca Phe",
@@ -230,7 +230,7 @@ module.exports = [
       similar_drinks: "Iced Coffee",
       preparation: "Add one part concentrated coffee to three parts water to a glass filled with ice",
       taste: "Smooth, flavorful, sweet",
-      notes: "Cold-brewed coffee is less acidic, has less caffeine and bitterness, and has a smoother flavor that drip-brewed coffee",
+      notes: "Cold-brewed coffee is less acidic, has less caffeine and bitterness, and has a smoother flavor than drip-brewed coffee",
       img: "https://assets.bonappetit.com/photos/57ad43f91b3340441497558f/5:7/w_1375,h_1925,c_limit/dublin-iced-coffee.jpg" 
     },
     {
