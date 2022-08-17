@@ -29,6 +29,7 @@ body {
     h3 {font-size: 30px;}
     .navbar {font-size: 30px; position: fixed;}
     img {min-width: 220px;}
+    .homepics:hover {width: 250px}
     .btn-secondary {font-size: 20px; min-width: 50%}
     .button {font-size: 30px; min-width: 50%}
 }
