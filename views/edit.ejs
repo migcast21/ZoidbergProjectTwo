@@ -12,6 +12,7 @@
     </head>
     <body>
         <h1>Edit Drinks</h1>
+        <div class = "aboutText">
         <form action="/drinks/<%=coffee.id%>?_method=PUT" method="POST">
             Name: <input type="text" name="name" value="<%=coffee.name%>"/><br/>
             Alternate Names: <input type="text" name="alternate_names" value="<%=coffee.alternate_names%>"/><br/>
@@ -27,6 +28,7 @@
             <br/>
             <input type="submit" value="Submit Changes"/>
         </form>
+        </div>
         <br/>
         <br/>
         <br/>
