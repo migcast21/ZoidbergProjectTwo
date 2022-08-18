@@ -270,6 +270,6 @@ module.exports = [
       preparation: "Add a shot of espresso to a black tea with milk",
       taste: "Sweet, spicy, strong",
       notes: "Preparation is similar to a Caffe Latte",
-      img: "https://images.squarespace-cdn.com/content/v1/56b0bf2c8259b50fa9157b85/1588242596618-1JQC9CPVBIUNZEZQLWJ7/Dirty-Chai-Latte-FB2.jpg" 
+      img: "https://i0.wp.com/tarasmulticulturaltable.com/wp-content/uploads/2016/09/Eiskaffee-German-Coffee-with-Ice-Cream-1-of-3.jpg?resize=566%2C849&ssl=1" 
     }
   ]
