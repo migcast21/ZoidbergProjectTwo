@@ -13,14 +13,6 @@ body {
 }
 
 /*media queries*/
-@media screen and (max-width: 767px) {
-    .sidenav {
-      height: auto;
-      padding: 15px;
-    }
-    .row.content {height:auto;} 
-    img {min-width: 45%}
-}
 
 @media screen and (min-width: 320px) and (max-width: 999px) {
     table {font-size: 40px; min-width: 60%}
