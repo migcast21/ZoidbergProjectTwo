@@ -245,5 +245,31 @@ module.exports = [
       taste: "Sweet, strong",
       notes: "In a Café Cubano, mixing the espresso with sugar while it brews gives a sweeter and smoother flavor than mixing sugar after brewing",
       img: "https://www.thespruceeats.com/thmb/xhjEXST5ToDhB3gFzCx6ZT5N3WI=/4000x2667/filters:no_upscale()/CubanCoffee-001-4928e640d5b7491aa223fb594285a3bf.jpg" 
+    },
+    {
+      name: "Dirty Chai Latte",
+      alternate_names: "",
+      country_of_origin: "United States",
+      type: "Hot",
+      coffee_base: "Espresso",
+      main_ingredients: "Black tea, coffee, milk, cinnamon",
+      similar_drinks: "Black Tie",
+      preparation: "Add a shot of espresso to a black tea with milk",
+      taste: "Sweet, spicy, strong",
+      notes: "Preparation is similar to a Caffe Latte",
+      img: "https://images.squarespace-cdn.com/content/v1/56b0bf2c8259b50fa9157b85/1588242596618-1JQC9CPVBIUNZEZQLWJ7/Dirty-Chai-Latte-FB2.jpg" 
+    },
+    {
+      name: "Eiskaffee",
+      alternate_names: "German Iced Coffee",
+      country_of_origin: "Germany",
+      type: "Cold",
+      coffee_base: "Drip-brew",
+      main_ingredients: "Coffee, ice cream, whipped cream",
+      similar_drinks: "Black Tie",
+      preparation: "Add a shot of espresso to a black tea with milk",
+      taste: "Sweet, spicy, strong",
+      notes: "Preparation is similar to a Caffe Latte",
+      img: "https://images.squarespace-cdn.com/content/v1/56b0bf2c8259b50fa9157b85/1588242596618-1JQC9CPVBIUNZEZQLWJ7/Dirty-Chai-Latte-FB2.jpg" 
     }
   ]
